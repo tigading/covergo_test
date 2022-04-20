@@ -1,10 +1,11 @@
 <template>
-  <Nuxt />
+	<Nuxt />
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'nuxt-property-decorator';
+import Vue from 'vue';
 
-@Component({ name: 'DefaultLayout' })
-export default class DefaultLayout extends Vue {}
+export default Vue.extend({
+	name: 'DefaultLayout',
+});
 </script>

@@ -1,16 +1,39 @@
-body {
-  font-family: 'Hiragino Kaku Gothic ProN',
-    'Hiragino Sans',
-    'Yu Gothic',
-    'Meiryo',
-    sans-serif;
+html {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	background: var(--body-color);
+	color: var(--text);
+
+	/* width */
+	&::-webkit-scrollbar {
+		height: 7px;
+		width: 7px;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: rgba(black, 0.05);
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: rgba(black, 0.1);
+	}
+
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+		background: rgba(black, 0.15);
+	}
 }
 
-a {
-  color: $primary;
-
-  &:hover {
-    color: $primary;
-    text-decoration: none;
-  }
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }

@@ -1,0 +1,54 @@
+/* breakpoint */
+$grid-breakpoint: (
+	xs: 0,
+	sm: 640px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1200px,
+	'2xl': 1536px,
+) !default;
+
+@function breakpoint-next(
+	$name,
+	$breakpoints: $grid-breakpoint,
+	$breakpoint-names: map-keys($breakpoints)
+) {
+	$n: index($breakpoint-names, $name);
+	@return if(
+		$n != null and $n < length($breakpoint-names),
+		nth($breakpoint-names, $n + 1),
+		null
+	);
+}
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoint) {
+	$min: map-get($breakpoints, $name);
+	@return if($min != 0, $min, null);
+}
+
+@function breakpoint-max($name, $breakpoints: $grid-breakpoint) {
+	$next: breakpoint-next($name, $breakpoints);
+	@return if($next, breakpoint-min($next, $breakpoints) - 0.02, null);
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoint) {
+	$min: breakpoint-min($name, $breakpoints);
+	@if $min {
+		@media (min-width: $min) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoint) {
+	$max: breakpoint-max($name, $breakpoints);
+	@if $max {
+		@media (max-width: $max) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}

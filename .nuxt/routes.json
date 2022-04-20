@@ -1,0 +1,16 @@
+[
+  {
+    "name": "index___vi",
+    "path": "/vi",
+    "component": "/Users/tigading/Workspace/repo/da_repo_nuxt/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_9dd4c2c2"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "/Users/tigading/Workspace/repo/da_repo_nuxt/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_9dd4c2c2"
+  }
+]
