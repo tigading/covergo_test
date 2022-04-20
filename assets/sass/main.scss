@@ -1,0 +1,14 @@
+@import "./abstracts/variables.scss";
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+@import "./abstracts/mixins.scss";
+
+// Base
+@import "./base/reset.scss";
+@import "./base/transitions.scss";
+
+// Components
+
+
+// Global
+@import "./base/global.scss";
