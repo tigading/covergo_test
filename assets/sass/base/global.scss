@@ -1,3 +1,24 @@
+.nuxt-link-exact-active {
+  @apply text-egg-blue;
+}
+
+.nuxt-link-active {
+  &:not(.home-router) {
+    @apply text-egg-blue;
+  }
+}
+
 input:-webkit-autofill {
-	-webkit-background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.da-btn {
+  @apply bg-cod-gray text-white px-8 md:px-10 font-medium h-12 md:h-14 hover:opacity-80;
+  line-height: 150%;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease;
+}
+
+.bg-white-90 {
+  background: rgba(white, 0.9);
 }

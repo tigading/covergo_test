@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/da_repo_nuxt.iml" filepath="$PROJECT_DIR$/.idea/da_repo_nuxt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/da_tigading.iml" filepath="$PROJECT_DIR$/.idea/da_tigading.iml" />
     </modules>
   </component>
 </project>

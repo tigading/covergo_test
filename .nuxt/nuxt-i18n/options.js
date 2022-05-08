@@ -9,9 +9,9 @@ export const nuxtOptions = {
   trailingSlash: undefined,
 }
 export const options = {
-  vueI18n: {"fallbackLocale":"en","messages":{"en":{"sidebar":{"customHeader":"Custom header","linkActive":"Active","normalLink":"Link","anotherLink":"Another Link"},"headerBar":{"searchPlaceholder":"Search...","lang":{"en":"English","ja":"日本語","vi":"Tiếng Việt"},"profileLink":"Profile","logoutLink":"Sign Out"},"welcome":"Welcome!"},"vi":{"sidebar":{"customHeader":"Tiêu đề","linkActive":"Đang mở","normalLink":"Liên kết","anotherLink":"Liên kết khác"},"headerBar":{"searchPlaceholder":"Tìm kiếm...","lang":{"en":"English","ja":"日本語","vi":"Tiếng Việt"},"profileLink":"Cá nhân","logoutLink":"Đăng xuất"},"welcome":"Chào mừng!"}}},
+  vueI18n: {"fallbackLocale":"en","messages":{"en":{"navBar":{"blog":"Blog","portfolio":"Portfolio","contact":"Contact"}}}},
   vueI18nLoader: false,
-  locales: ["en","vi"],
+  locales: ["en"],
   defaultLocale: "en",
   defaultDirection: "ltr",
   routesNameSeparator: "___",
@@ -31,6 +31,6 @@ export const options = {
   beforeLanguageSwitch: () => null,
   onBeforeLanguageSwitch: () => {},
   onLanguageSwitched: () => null,
-  normalizedLocales: [{"code":"en"},{"code":"vi"}],
-  localeCodes: ["en","vi"],
+  normalizedLocales: [{"code":"en"}],
+  localeCodes: ["en"],
 }
