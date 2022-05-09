@@ -1,5 +1,5 @@
 <template>
-  <div class="_portfolio">
+  <div class="_portfolio dark:bg-black">
     <div class="max-w-[1200px] md-down:px-4 px-16 xl:px-0 mx-auto">
       <HeroSection />
     </div>

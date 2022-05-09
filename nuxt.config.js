@@ -21,6 +21,13 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-svg', href: '/favicon.svg' }],
+    script: [
+      {
+        body: true,
+        ssr: false,
+        src: '/main.js',
+      },
+    ],
   },
 
   loading: {
@@ -29,6 +36,7 @@ export default {
     duration: 2000,
     throttle: 0,
   },
+
   layoutTransition: {
     name: 'layout',
     mode: 'out-in',
@@ -78,11 +86,13 @@ export default {
         config.devtool = ctx.isClient ? 'source-map' : 'inline-source-map';
       }
     },
+
     babel: {
       plugins: [
         ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
       ],
     },
+
     postcss: {
       plugins: {
         tailwindcss: {},
@@ -100,6 +110,7 @@ export default {
       onlyOnRoot: true,
       alwaysRedirect: true,
     },
+
     vueI18n: {
       fallbackLocale: 'en',
       messages,

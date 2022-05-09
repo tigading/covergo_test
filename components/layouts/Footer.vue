@@ -1,6 +1,6 @@
 <template>
   <div
-    class="_footer flex flex-col items-center justify-center text-center gap-[30px] pt-[120px] pb-[60px] bg-neutral-100 text-cod-gray"
+    class="_footer flex flex-col items-center justify-center text-center gap-[30px] pt-[120px] pb-[40px] bg-neutral-100 text-cod-gray"
   >
     <div class="text-title--md md:text-title--lg font-semibold">
       DINH HOANG TUAN

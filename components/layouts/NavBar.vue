@@ -2,23 +2,28 @@
   <div
     class="_nav-bar max-w-[1200px] md-down:px-4 px-16 xl:px-0 relative mx-auto h-full flex items-center justify-between relative"
   >
-    <div class="_brand uppercase font-extrabold text-brand">
+    <div
+      class="_brand uppercase font-extrabold text-brand cursor-pointer"
+      @click="$router.push('/')"
+    >
       TIGA<span class="text-egg-blue">.</span>
     </div>
     <div>
-      <ul
-        class="hidden md:flex items-center justify-end list-none capitalize font-semibold gap-14"
-      >
-        <li v-for="menuItem in menu" :key="menuItem.name">
-          <nuxt-link
-            :class="{ 'home-router': menuItem.link === '/' }"
-            :to="menuItem.link"
-            class="hover:text-egg-blue"
-          >
-            {{ $t(`navBar.${menuItem.name}`) }}
-          </nuxt-link>
-        </li>
-      </ul>
+      <div class="hidden md:flex items-center gap-8">
+        <ul
+          class="flex items-center justify-end list-none capitalize font-semibold gap-14"
+        >
+          <li v-for="menuItem in menu" :key="menuItem.name">
+            <nuxt-link
+              :class="{ 'home-router': menuItem.link === '/' }"
+              :to="menuItem.link"
+              class="hover:text-egg-blue"
+            >
+              {{ $t(`navBar.${menuItem.name}`) }}
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
       <div
         class="text-cod-gray hover:text-egg-blue md:hidden cursor-pointer"
         @click="isMenuShow = true"
