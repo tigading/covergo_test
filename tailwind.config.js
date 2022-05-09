@@ -17,6 +17,10 @@ module.exports = {
       colors: {
         'egg-blue': '#00C8CC',
         'cod-gray': '#090909',
+        'white-90': 'rgba(255, 255, 255, 0.9)',
+        'white-94': 'rgba(255, 255, 255, 0.94)',
+        'black-90': 'rgba(0, 0, 0, 0.9)',
+        'black-94': 'rgba(0, 0, 0, 0.94)',
       },
       fontSize: {
         'title--md': [

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hero-section w-full pt-[80px] md:pt-[100px] pb-[100px] flex flex-col-reverse md:flex-row items-center justify-between"
+    class="hero-section text-cod-gray dark:text-white w-full pt-[80px] md:pt-[100px] pb-[100px] flex flex-col-reverse md:flex-row items-center justify-between"
   >
     <div>
       <div

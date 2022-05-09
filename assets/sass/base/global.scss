@@ -1,3 +1,4 @@
+// Link
 .nuxt-link-exact-active {
   @apply text-egg-blue;
 }
@@ -8,17 +9,68 @@
   }
 }
 
+// Background auto fill
 input:-webkit-autofill {
   -webkit-background-clip: text;
 }
 
+// Button
 .da-btn {
-  @apply bg-cod-gray text-white px-8 md:px-10 font-medium h-12 md:h-14 hover:opacity-80;
+  @apply bg-cod-gray dark:bg-white text-white dark:text-cod-gray px-8 md:px-10 font-medium h-12 md:h-14 hover:opacity-80;
   line-height: 150%;
   letter-spacing: 0.1rem;
   transition: all 0.2s ease;
 }
 
-.bg-white-90 {
-  background: rgba(white, 0.9);
+// Flickity
+.flickity-page-dots {
+  transform: translateY(80px);
+
+  .dot {
+    width: 30px !important;
+    height: 1.4px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    @apply bg-black-90 dark:bg-white-90;
+
+    &:not(.is-selected) {
+      @apply opacity-10 dark:opacity-20;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: 'Drag';
+    text-transform: uppercase;
+    transform: translateX(-50%);
+    left: calc(50% - 12px);
+    bottom: 20px;
+    font-weight: 600;
+    -webkit-animation-name: right-left;
+    animation-name: right-left;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+  }
+
+  @keyframes right-left {
+    0% {
+      transform: translateX(12px);
+    }
+
+    50% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(12px);
+    }
+  }
 }

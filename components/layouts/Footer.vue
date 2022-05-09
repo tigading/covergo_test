@@ -1,6 +1,6 @@
 <template>
   <div
-    class="_footer flex flex-col items-center justify-center text-center gap-[30px] pt-[120px] pb-[40px] bg-neutral-100 text-cod-gray"
+    class="_footer flex flex-col items-center justify-center text-center gap-[30px] pt-[120px] pb-[40px] bg-neutral-100 dark:bg-cod-gray"
   >
     <div class="text-title--md md:text-title--lg font-semibold">
       DINH HOANG TUAN
@@ -11,34 +11,34 @@
     <div class="flex items-center justify-center gap-5">
       <a href="https://facebook.com/tigading7" target="_blank">
         <div
-          class="social__icon h-[50px] w-[50px] flex items-center justify-center text-cod-gray"
+          class="social__icon h-[50px] w-[50px] flex items-center justify-center"
         >
           <InlineSvg class="h-4 md:h-5" src="/icons/facebook-icon.svg" />
         </div>
       </a>
       <a href="https://instagram.com/tigading7" target="_blank">
         <div
-          class="social__icon h-[50px] w-[50px] flex items-center justify-center text-cod-gray"
+          class="social__icon h-[50px] w-[50px] flex items-center justify-center"
         >
           <InlineSvg class="h-4 md:h-5" src="/icons/instagram-icon.svg" />
         </div>
       </a>
       <a href="https://twitter.com/tigading7" target="_blank">
         <div
-          class="social__icon h-[50px] w-[50px] flex items-center justify-center text-cod-gray"
+          class="social__icon h-[50px] w-[50px] flex items-center justify-center"
         >
           <InlineSvg class="h-4 md:h-5" src="/icons/twitter-icon.svg" />
         </div>
       </a>
       <a href="https://linkedin.com/in/dinh-hoang-tuan" target="_blank">
         <div
-          class="social__icon h-[50px] w-[50px] flex items-center justify-center text-cod-gray"
+          class="social__icon h-[50px] w-[50px] flex items-center justify-center"
         >
           <InlineSvg class="h-4 md:h-5" src="/icons/linkedin-icon.svg" />
         </div>
       </a>
     </div>
-    <div class="text-sm text-neutral-500">
+    <div class="text-sm text-neutral-500 dark:text-neutral-300">
       <div>Designed & Developed by Tiga Ding</div>
       <div class="mt-2">All rights reserved 2022</div>
     </div>

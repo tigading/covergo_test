@@ -17,10 +17,10 @@
       </div>
     </div>
     <div
-      class="hero-post__des absolute bg-white xl:w-[600px] bottom-0 p-6 md:p-10 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[60px]"
+      class="hero-post__des bg-white-90 dark:bg-black-94 absolute xl:w-[600px] bottom-0 p-6 md:p-10 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[60px]"
     >
       <div
-        class="flex items-center font-semibold text-neutral-500 md-down:text-sm"
+        class="flex items-center font-semibold text-neutral-500 dark:text-neutral-300 md-down:text-sm"
       >
         {{ data.publishAt }}
         <span class="text-red-500 mx-4">
@@ -61,8 +61,6 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .hero-post {
   &__des {
-    background: rgba(white, 0.94);
-
     @include media-breakpoint-down(md) {
       width: calc(100% - 32px);
     }

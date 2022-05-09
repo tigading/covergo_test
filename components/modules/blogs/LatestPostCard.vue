@@ -21,7 +21,7 @@
     </div>
     <div class="mt-4 md:mt-6">
       <div
-        class="flex items-center font-semibold text-neutral-500 lg-down:text-sm"
+        class="flex items-center font-semibold text-neutral-500 dark:text-neutral-300 lg-down:text-sm"
       >
         {{ data.publishAt }}
         <span class="text-red-500 mx-4">

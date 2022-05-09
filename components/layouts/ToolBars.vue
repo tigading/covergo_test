@@ -1,11 +1,17 @@
 <template>
   <div
-    class="tool-bar w-12 rounded-md py-4 flex flex-col items-center justify-center gap-6 opacity-20 hover:opacity-100"
+    class="tool-bar bg-black-90 dark:bg-white-90 w-12 rounded-md py-4 flex flex-col items-center justify-center gap-6"
   >
-    <div class="tool-bar__icon text-white cursor-pointer" @click="toTop">
+    <div
+      class="tool-bar__icon text-white dark:text-cod-gray cursor-pointer"
+      @click="toTop"
+    >
       <InlineSvg class="h-6" src="/icons/arrow-up.svg" />
     </div>
-    <div class="tool-bar__icon text-white cursor-pointer">
+    <div
+      class="tool-bar__icon text-white dark:text-cod-gray cursor-pointer"
+      @click="setTheme"
+    >
       <InlineSvg class="h-6 w-6" src="/icons/light-mode.svg" />
     </div>
   </div>
@@ -21,14 +27,24 @@ export default Vue.extend({
     toTop() {
       window.scrollTo(0, 0);
     },
+    setTheme() {
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        localStorage.theme = 'light';
+        document.documentElement.classList.remove('dark');
+      } else {
+        localStorage.theme = 'dark';
+        document.documentElement.classList.add('dark');
+      }
+    },
   },
 });
 </script>
 <style lang="scss" scoped>
 .tool-bar {
-  background-color: rgba(0, 0, 0, 0.9);
-  transition: all 0.1s ease;
-
   &__icon {
     transition: all 0.2s ease;
 

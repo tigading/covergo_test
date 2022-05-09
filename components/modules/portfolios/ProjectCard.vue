@@ -15,7 +15,7 @@
         {{ project.name }}
       </div>
       <div
-        class="font-semibold text-neutral-500 md:text-lg mt-[20px] pl-4 border-[3px] border-y-0 border-r-0 border-l-egg-blue"
+        class="font-semibold text-neutral-500 dark:text-neutral-300 md:text-lg mt-[20px] pl-4 border-[3px] border-y-0 border-r-0 border-l-egg-blue"
       >
         {{ project.category }}
       </div>

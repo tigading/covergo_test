@@ -1,14 +1,16 @@
 <template>
-  <div class="__layout relative">
-    <div class="fixed right-2.5 bottom-[10%]">
+  <div class="__layout bg-white dark:bg-black text-cod-gray dark:text-white">
+    <div
+      class="fixed rounded-md right-2.5 bottom-[10%] opacity-[0.15] hover:opacity-100 z-10 transition-all duration-100"
+    >
       <ToolBars />
     </div>
     <div
-      class="__nav-bar w-full h-24 fixed top-0 left-1/2 transform -translate-x-1/2 z-10"
+      class="__nav-bar bg-white-94 dark:bg-black-94 w-full h-24 fixed top-0 left-1/2 transform -translate-x-1/2 z-10"
     >
       <NavBar />
     </div>
-    <div class="__container mt-24">
+    <div class="__container pt-24">
       <Nuxt />
     </div>
     <div class="__footer">
@@ -25,11 +27,7 @@ import ToolBars from '~/components/layouts/ToolBars.vue';
 
 export default Vue.extend({
   name: 'DefaultLayout',
+
   components: { ToolBars, Footer, NavBar },
 });
 </script>
-<style lang="scss" scoped>
-.__nav-bar {
-  background: rgba(white, 0.94);
-}
-</style>

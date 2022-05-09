@@ -12,7 +12,7 @@
       />
       <div
         v-if="data.type === TYPES.VIDEO"
-        class="h-[70px] w-[70px] md:h-[90px] md:w-[90px] pl-1.5 rounded-full bg-white-90 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+        class="h-[70px] w-[70px] md:h-[90px] md:w-[90px] pl-1.5 rounded-full bg-white-90 dark:bg-black-90 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
       >
         <span class="text-egg-blue">
           <InlineSvg
@@ -28,7 +28,7 @@
     >
       <div
         :class="{ 'xl:justify-end': reverse }"
-        class="flex items-center md:justify-center xl:justify-start font-semibold text-neutral-500 md-down:text-sm"
+        class="flex items-center md:justify-center xl:justify-start font-semibold text-neutral-500 dark:text-neutral-300 md-down:text-sm"
       >
         {{ data.publishAt }}
         <span class="text-red-500 mx-4">

@@ -1,5 +1,7 @@
 <template>
-  <div class="_blog max-w-[1200px] mx-auto mb-[160px] md:mb-[300px]">
+  <div
+    class="_blog max-w-[1200px] mx-auto mb-[160px] md:mb-[300px] text-cod-gray dark:text-white"
+  >
     <HeroPost v-if="heroPost" :data="heroPost" />
     <div
       v-for="(post, index) in posts"

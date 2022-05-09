@@ -10,7 +10,7 @@
         />
       </div>
       <div
-        class="flex items-center font-semibold text-neutral-500 md-down:text-sm mt-[30px] md-down:px-4 px-16 xl:px-0"
+        class="flex items-center font-semibold text-neutral-500 dark:text-neutral-300 md-down:text-sm mt-[30px] md-down:px-4 px-16 xl:px-0"
       >
         {{ post.publishAt }}
         <span class="text-red-500 mx-4">

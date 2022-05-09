@@ -3,28 +3,24 @@
     "name": "blog___en",
     "path": "/blog",
     "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/pages/blog/index.vue",
-    "chunkName": "pages/blog/index",
-    "_name": "_1b15fe79"
+    "chunkName": "pages/blog/index"
   },
   {
     "name": "contact___en",
     "path": "/contact",
     "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/pages/contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_86967408"
+    "chunkName": "pages/contact"
   },
   {
     "name": "blog-title___en",
     "path": "/blog/:title",
     "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/pages/blog/_title.vue",
-    "chunkName": "pages/blog/_title",
-    "_name": "_45b58942"
+    "chunkName": "pages/blog/_title"
   },
   {
     "name": "index___en",
     "path": "/",
     "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_1b6222ae"
+    "chunkName": "pages/index"
   }
 ]

@@ -4,7 +4,7 @@
   >
     <div class="max-w-[1200px] mx-auto">
       <div
-        class="_contact-info bg-white w-full md:w-[90%] md:max-w-[600px] p-[60px]"
+        class="_contact-info bg-white dark:bg-black w-full md:w-[90%] md:max-w-[600px] p-[60px]"
       >
         <div
           class="_contact-info__title text-title--md tracking-wider md:text-title font-bold"
@@ -15,58 +15,56 @@
           <div
             class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
           >
-            <div class="text-cod-gray uppercase font-semibold">NAME</div>
-            <div class="text-cod-gray opacity-50 sm:text-right font-medium">
+            <div class="uppercase font-semibold">NAME</div>
+            <div class="opacity-50 dark:opacity-90 sm:text-right font-medium">
               Dinh Hoang Tuan
             </div>
           </div>
           <div
             class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-8 gap-4"
           >
-            <div class="text-cod-gray uppercase font-semibold">ADDRESS</div>
-            <div class="text-cod-gray opacity-50 sm:text-right font-medium">
+            <div class="uppercase font-semibold">ADDRESS</div>
+            <div class="opacity-50 dark:opacity-90 sm:text-right font-medium">
               Can Tho, Viet Nam
             </div>
           </div>
           <div
             class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-8 gap-4"
           >
-            <div class="text-cod-gray uppercase font-semibold">EMAIL</div>
-            <div class="text-cod-gray opacity-50 sm:text-right font-medium">
+            <div class="uppercase font-semibold">EMAIL</div>
+            <div class="opacity-50 dark:opacity-90 sm:text-right font-medium">
               tuandh7x@gmail.com
             </div>
           </div>
           <div
             class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-8 gap-4"
           >
-            <div class="text-cod-gray uppercase font-semibold">SOCIALS</div>
-            <div
-              class="text-cod-gray opacity-50 flex items-center sm:justify-end gap-[30px]"
-            >
+            <div class="uppercase font-semibold">SOCIALS</div>
+            <div class="flex items-center sm:justify-end gap-[30px]">
               <a href="https://facebook.com/tigading7" target="_blank">
                 <div
-                  class="social__icon flex items-center justify-center text-cod-gray"
+                  class="social__icon flex items-center justify-center opacity-50 dark:opacity-90 hover:opacity-100 dark:hover:opacity-100"
                 >
                   <InlineSvg class="h-4" src="/icons/facebook-icon.svg" />
                 </div>
               </a>
               <a href="https://instagram.com/tigading7" target="_blank">
                 <div
-                  class="social__icon flex items-center justify-center text-cod-gray"
+                  class="social__icon flex items-center justify-center opacity-50 dark:opacity-90 hover:opacity-100 dark:hover:opacity-100"
                 >
                   <InlineSvg class="h-4" src="/icons/instagram-icon.svg" />
                 </div>
               </a>
               <a href="https://twitter.com/tigading7" target="_blank">
                 <div
-                  class="social__icon flex items-center justify-center text-cod-gray"
+                  class="social__icon flex items-center justify-center opacity-50 dark:opacity-90 hover:opacity-100 dark:hover:opacity-100"
                 >
                   <InlineSvg class="h-4" src="/icons/twitter-icon.svg" />
                 </div>
               </a>
               <a href="https://linkedin.com/in/dinh-hoang-tuan" target="_blank">
                 <div
-                  class="social__icon flex items-center justify-center text-cod-gray"
+                  class="social__icon flex items-center justify-center opacity-50 dark:opacity-90 hover:opacity-100 dark:hover:opacity-100"
                 >
                   <InlineSvg class="h-4" src="/icons/linkedin-icon.svg" />
                 </div>
