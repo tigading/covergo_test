@@ -4,7 +4,7 @@
   >
     <div
       class="tool-bar__icon text-white dark:text-cod-gray cursor-pointer"
-      @click="toTop"
+      @click="$emit('scrollToTop')"
     >
       <InlineSvg class="h-6" src="/icons/arrow-up.svg" />
     </div>
@@ -24,9 +24,6 @@ export default Vue.extend({
   name: 'ToolBars',
 
   methods: {
-    toTop() {
-      window.scrollTo(0, 0);
-    },
     setTheme() {
       if (
         localStorage.theme === 'dark' ||

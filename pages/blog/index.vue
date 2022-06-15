@@ -8,7 +8,9 @@
       :key="post.id"
       class="mt-[160px] md:mt-[300px] md-down:px-4 px-16 xl:px-0"
     >
-      <PostCard :data="post" :reverse="index % 2 === 0" />
+      <nuxt-link to="/blog/bai-viet">
+        <PostCard :data="post" :reverse="index % 2 === 0" />
+      </nuxt-link>
     </div>
   </div>
 </template>

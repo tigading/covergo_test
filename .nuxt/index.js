@@ -5,7 +5,7 @@ import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
 import { createRouter } from './router.js'
 import NuxtChild from './components/nuxt-child.js'
-import NuxtError from './components/nuxt-error.vue'
+import NuxtError from '../layouts/error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
@@ -13,12 +13,14 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_pluginutils_4cab3dea from 'nuxt_plugin_pluginutils_4cab3dea' // Source: ./nuxt-i18n/plugin.utils.js (mode: 'all')
-import nuxt_plugin_pluginrouting_62d250d4 from 'nuxt_plugin_pluginrouting_62d250d4' // Source: ./nuxt-i18n/plugin.routing.js (mode: 'all')
-import nuxt_plugin_pluginmain_161d2b99 from 'nuxt_plugin_pluginmain_161d2b99' // Source: ./nuxt-i18n/plugin.main.js (mode: 'all')
-import nuxt_plugin_axios_1196d330 from 'nuxt_plugin_axios_1196d330' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_vueInlineSvg_509d389b from 'nuxt_plugin_vueInlineSvg_509d389b' // Source: ../plugins/vueInlineSvg (mode: 'all')
-import nuxt_plugin_vueFlickity_0ec6d99a from 'nuxt_plugin_vueFlickity_0ec6d99a' // Source: ../plugins/vueFlickity (mode: 'client')
+import nuxt_plugin_pluginutils_51779ff2 from 'nuxt_plugin_pluginutils_51779ff2' // Source: ./nuxt-i18n/plugin.utils.js (mode: 'all')
+import nuxt_plugin_pluginrouting_efe00e86 from 'nuxt_plugin_pluginrouting_efe00e86' // Source: ./nuxt-i18n/plugin.routing.js (mode: 'all')
+import nuxt_plugin_pluginmain_53c8f3d2 from 'nuxt_plugin_pluginmain_53c8f3d2' // Source: ./nuxt-i18n/plugin.main.js (mode: 'all')
+import nuxt_plugin_axios_4937a52e from 'nuxt_plugin_axios_4937a52e' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_gsapModule_08435988 from 'nuxt_plugin_gsapModule_08435988' // Source: ./gsapModule.js (mode: 'all')
+import nuxt_plugin_vueinlinesvg_10b76e66 from 'nuxt_plugin_vueinlinesvg_10b76e66' // Source: ../plugins/vue-inline-svg (mode: 'all')
+import nuxt_plugin_vueflickity_4d0090c0 from 'nuxt_plugin_vueflickity_4d0090c0' // Source: ../plugins/vue-flickity (mode: 'client')
+import nuxt_plugin_locomotivescroll_785eec6f from 'nuxt_plugin_locomotivescroll_785eec6f' // Source: ../plugins/locomotive-scroll (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -86,7 +88,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"TIGA | Portfolio","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-svg","href":"\u002Ffavicon.svg"}],"script":[{"body":true,"ssr":false,"src":"\u002Fmain.js"}],"style":[]},
+    head: {"title":"TIGA | DINH HOANG TUAN","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"title","property":"title","content":"TIGA | DINH HOANG TUAN"},{"hid":"description","name":"description","content":"Hello! I'm Dinh Hoang Tuan"},{"property":"og:site_name","content":"TIGA"},{"hid":"og:type","property":"og:type","content":"website"},{"hid":"og:url","property":"og:url","content":"https:\u002F\u002Ftigading.com"},{"hid":"og:title","property":"og:title","content":"TIGA | DINH HOANG TUAN"},{"hid":"og:description","property":"og:description","content":"Hello! I'm Dinh Hoang Tuan"},{"hid":"og:image","property":"og:image","content":"https:\u002F\u002Ftigading79.web.app\u002Fcover.png"},{"property":"og:image:width","content":"740"},{"property":"og:image:height","content":"300"},{"name":"twitter:site","content":"TIGA"},{"name":"twitter:card","content":"https:\u002F\u002Ftigading79.web.app\u002Fcover.png"},{"hid":"twitter:url","name":"twitter:url","content":"https:\u002F\u002Ftigading.com"},{"hid":"twitter:title","name":"twitter:title","content":"TIGA | DINH HOANG TUAN"},{"hid":"twitter:description","name":"twitter:description","content":"Hello! I'm Dinh Hoang Tuan"},{"hid":"twitter:image","name":"twitter:image","content":"https:\u002F\u002Ftigading79.web.app\u002Fcover.png"}],"link":[{"rel":"icon","type":"image\u002Fx-svg","href":"\u002Ffavicon.svg"}],"script":[{"body":true,"ssr":false,"src":"\u002Fjs\u002Fmain.js"}],"style":[]},
 
     store,
     router,
@@ -215,28 +217,36 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_pluginutils_4cab3dea === 'function') {
-    await nuxt_plugin_pluginutils_4cab3dea(app.context, inject)
+  if (typeof nuxt_plugin_pluginutils_51779ff2 === 'function') {
+    await nuxt_plugin_pluginutils_51779ff2(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_pluginrouting_62d250d4 === 'function') {
-    await nuxt_plugin_pluginrouting_62d250d4(app.context, inject)
+  if (typeof nuxt_plugin_pluginrouting_efe00e86 === 'function') {
+    await nuxt_plugin_pluginrouting_efe00e86(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_pluginmain_161d2b99 === 'function') {
-    await nuxt_plugin_pluginmain_161d2b99(app.context, inject)
+  if (typeof nuxt_plugin_pluginmain_53c8f3d2 === 'function') {
+    await nuxt_plugin_pluginmain_53c8f3d2(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_1196d330 === 'function') {
-    await nuxt_plugin_axios_1196d330(app.context, inject)
+  if (typeof nuxt_plugin_axios_4937a52e === 'function') {
+    await nuxt_plugin_axios_4937a52e(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_vueInlineSvg_509d389b === 'function') {
-    await nuxt_plugin_vueInlineSvg_509d389b(app.context, inject)
+  if (typeof nuxt_plugin_gsapModule_08435988 === 'function') {
+    await nuxt_plugin_gsapModule_08435988(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_vueFlickity_0ec6d99a === 'function') {
-    await nuxt_plugin_vueFlickity_0ec6d99a(app.context, inject)
+  if (typeof nuxt_plugin_vueinlinesvg_10b76e66 === 'function') {
+    await nuxt_plugin_vueinlinesvg_10b76e66(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vueflickity_4d0090c0 === 'function') {
+    await nuxt_plugin_vueflickity_4d0090c0(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_locomotivescroll_785eec6f === 'function') {
+    await nuxt_plugin_locomotivescroll_785eec6f(app.context, inject)
   }
 
   // Lock enablePreview in context

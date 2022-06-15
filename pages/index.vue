@@ -8,13 +8,15 @@
     >
       <div
         class="portfolio__title text-title--md tracking-wider tracking-wider md:text-title font-bold text-center"
+        data-scroll-call="portfolio"
       >
         PORTFOLIO <span class="text-egg-blue">.</span>
       </div>
       <div class="portfolio__list mt-[60px] md:mt-[100px]">
         <ProjectCard
-          v-for="index in 10"
-          :key="index"
+          v-for="project in projects"
+          :key="project.id"
+          :data="project"
           class="mb-[160px] md:mb-[300px]"
         />
       </div>
@@ -26,7 +28,7 @@
         ALL WORK <span class="text-egg-blue">.</span>
       </div>
       <div class="all-work__list mt-[60px] md:mt-[100px]">
-        <FlickityProjects />
+        <FlickityProjects :data="secondProjects" />
       </div>
     </div>
   </div>
@@ -37,10 +39,24 @@ import Vue from 'vue';
 import HeroSection from '~/components/modules/portfolios/HeroSection.vue';
 import ProjectCard from '~/components/modules/portfolios/ProjectCard.vue';
 import FlickityProjects from '~/components/modules/portfolios/FlickityProjects.vue';
+import { projects, secondProjects } from '~/data/projects';
 
 export default Vue.extend({
   name: 'PortfolioPage',
 
   components: { FlickityProjects, ProjectCard, HeroSection },
+
+  data() {
+    return {
+      projects,
+      secondProjects,
+    };
+  },
+
+  head() {
+    return {
+      title: 'TIGA | Portfolio',
+    };
+  },
 });
 </script>

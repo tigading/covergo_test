@@ -1,6 +1,6 @@
 <template>
   <div class="latest-post-card">
-    <div class="w-full aspect-[3/2] relative">
+    <div class="w-full aspect-[3/2] relative overflow-hidden">
       <img
         :alt="data.url"
         :src="data.thumbnail"

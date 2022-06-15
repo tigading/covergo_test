@@ -6,11 +6,11 @@
           :alt="post.url"
           :src="post.thumbnail"
           :title="post.title"
-          class="h-full w-full bg-cover"
+          class="h-full w-full bg-cover not-hover"
         />
       </div>
       <div
-        class="flex items-center font-semibold text-neutral-500 dark:text-neutral-300 md-down:text-sm mt-[30px] md-down:px-4 px-16 xl:px-0"
+        class="flex items-center font-semibold text-neutral-500 dark:text-neutral-300 md-down:text-sm mt-[30px]"
       >
         {{ post.publishAt }}
         <span class="text-red-500 mx-4">
@@ -19,14 +19,11 @@
         {{ post.category }}
       </div>
       <div
-        class="single-post__title font-bold text-title--md md:text-title mt-[30px] md-down:px-4 px-16 xl:px-0"
+        class="single-post__title font-bold text-title--md md:text-title mt-[30px]"
       >
         {{ post.title }}
       </div>
-      <div
-        class="mt-[30px] md-down:px-4 px-16 xl:px-0"
-        v-html="post.content"
-      ></div>
+      <div class="mt-[30px]" v-html="post.content"></div>
       <div class="uppercase font-semibold mt-[100px] text-right">
         By Tiga Ding
       </div>
@@ -88,6 +85,12 @@ export default Vue.extend({
           '\n' +
           'Không gian sống lý tưởng là một không gian nói được văn hoá của chủ nhà.',
       },
+    };
+  },
+
+  head() {
+    return {
+      title: 'TIGA | Bài viết',
     };
   },
 

@@ -10,7 +10,7 @@ export default {
       skipTimerCount: 0,
       rtl: false,
       throttle: 0,
-      duration: 2000,
+      duration: 1000,
       continuous: true
     }
   },
@@ -163,7 +163,7 @@ export default {
   width: 0%;
   opacity: 1;
   transition: width 0.1s, opacity 0.4s;
-  background-color: #007bff;
+  background-color: #00C8CC;
   z-index: 999999;
 }
 

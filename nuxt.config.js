@@ -7,7 +7,7 @@ export default {
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'TIGA | Portfolio',
+    title: 'TIGA | DINH HOANG TUAN',
     htmlAttrs: {
       lang: 'en',
     },
@@ -17,23 +17,80 @@ export default {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1',
       },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
+      {
+        hid: 'title',
+        property: 'title',
+        content: 'TIGA | DINH HOANG TUAN',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: `Hello! I'm Dinh Hoang Tuan`,
+      },
+      { property: 'og:site_name', content: `TIGA` },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://tigading.com',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'TIGA | DINH HOANG TUAN',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: `Hello! I'm Dinh Hoang Tuan`,
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://tigading79.web.app/cover.png',
+      },
+      { property: 'og:image:width', content: '740' },
+      { property: 'og:image:height', content: '300' },
+      { name: 'twitter:site', content: 'TIGA' },
+      {
+        name: 'twitter:card',
+        content: 'https://tigading79.web.app/cover.png',
+      },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://tigading.com',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'TIGA | DINH HOANG TUAN',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: `Hello! I'm Dinh Hoang Tuan`,
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://tigading79.web.app/cover.png',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-svg', href: '/favicon.svg' }],
     script: [
       {
         body: true,
         ssr: false,
-        src: '/main.js',
+        src: '/js/main.js',
       },
     ],
   },
 
   loading: {
-    color: '#007bff',
+    color: '#00C8CC',
     continuous: true,
-    duration: 2000,
+    duration: 1000,
     throttle: 0,
   },
 
@@ -47,10 +104,14 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/vueInlineSvg',
+    '~/plugins/vue-inline-svg',
     {
-      src: '~/plugins/vueFlickity',
-      ssr: false,
+      src: '~/plugins/vue-flickity',
+      mode: 'client',
+    },
+    {
+      src: '~/plugins/locomotive-scroll',
+      mode: 'client',
     },
   ],
 
@@ -64,6 +125,9 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    // https://www.npmjs.com/package/nuxt-gsap-module
+    'nuxt-gsap-module',
+    '@nuxtjs/sitemap',
   ],
 
   styleResources: {
@@ -128,5 +192,20 @@ export default {
       productionTip: false,
       devtools: process.env.NODE_ENV === 'development' || process.env.DEBUG,
     },
+  },
+
+  gsap: {
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true,
+    },
+    extraEases: {
+      expoScaleEase: true,
+    },
+  },
+
+  sitemap: {
+    hostname: process.env.HOST_NAME,
+    gzip: true,
   },
 };

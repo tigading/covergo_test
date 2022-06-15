@@ -2,25 +2,40 @@
   {
     "name": "blog___en",
     "path": "/blog",
-    "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/pages/blog/index.vue",
-    "chunkName": "pages/blog/index"
+    "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/da_tigading_landingpage/pages/blog/index.vue",
+    "chunkName": "pages/blog/index",
+    "url": "/blog",
+    "_name": "_4f3b09f2"
   },
   {
     "name": "contact___en",
     "path": "/contact",
-    "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/pages/contact.vue",
-    "chunkName": "pages/contact"
+    "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/da_tigading_landingpage/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "url": "/contact",
+    "_name": "_a669d5ba"
+  },
+  {
+    "name": "oops___en",
+    "path": "/oops",
+    "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/da_tigading_landingpage/pages/oops.vue",
+    "chunkName": "pages/oops",
+    "url": "/oops",
+    "_name": "_6b356e70"
   },
   {
     "name": "blog-title___en",
     "path": "/blog/:title",
-    "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/pages/blog/_title.vue",
-    "chunkName": "pages/blog/_title"
+    "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/da_tigading_landingpage/pages/blog/_title.vue",
+    "chunkName": "pages/blog/_title",
+    "_name": "_d39c262e"
   },
   {
     "name": "index___en",
     "path": "/",
-    "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "/Users/tigading/Workspace/projects/dingambition/da_tigading/da_tigading_landingpage/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_e97fe0d6"
   }
 ]

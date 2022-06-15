@@ -2,12 +2,11 @@
   <div
     class="_nav-bar max-w-[1200px] md-down:px-4 px-16 xl:px-0 relative mx-auto h-full flex items-center justify-between relative"
   >
-    <div
-      class="_brand uppercase font-extrabold text-brand cursor-pointer"
-      @click="$router.push('/')"
-    >
-      TIGA<span class="text-egg-blue">.</span>
-    </div>
+    <a href="/">
+      <div class="_brand uppercase font-extrabold text-brand">
+        TIGA<span class="text-egg-blue">.</span>
+      </div>
+    </a>
     <div>
       <div class="hidden md:flex items-center gap-8">
         <ul
@@ -25,7 +24,7 @@
         </ul>
       </div>
       <div
-        class="text-cod-gray hover:text-egg-blue md:hidden cursor-pointer"
+        class="text-cod-gray dark:text-white hover:text-egg-blue md:hidden cursor-pointer"
         @click="isMenuShow = true"
       >
         <InlineSvg class="h-4" src="/icons/bars.svg" />
@@ -33,7 +32,7 @@
     </div>
     <div
       :class="isMenuShow ? '-translate-x-full' : 'translate-x-0'"
-      class="md:hidden fixed h-screen w-screen bg-white -right-full top-0 flex items-center justify-center transition-all duration-500"
+      class="md:hidden fixed h-screen w-screen bg-white dark:bg-black -right-full top-0 flex items-center justify-center transition-all duration-500"
     >
       <div
         class="absolute top-10 right-10 text-neutral-400 hover:text-egg-blue md:hidden cursor-pointer"
@@ -46,7 +45,11 @@
       </div>
       <ul class="list-none capitalize font-bold text-center">
         <li v-for="menuItem in menu" :key="menuItem.name" class="text-2xl mb-8">
-          <nuxt-link :to="menuItem.link" class="hover:text-egg-blue">
+          <nuxt-link
+            :class="{ 'home-router': menuItem.link === '/' }"
+            :to="menuItem.link"
+            class="hover:text-egg-blue"
+          >
             {{ $t(`navBar.${menuItem.name}`) }}
           </nuxt-link>
         </li>
@@ -71,6 +74,16 @@ export default Vue.extend({
   computed: {
     menu() {
       return Menu;
+    },
+  },
+
+  watch: {
+    '$route.fullPath': {
+      handler(value) {
+        if (value) {
+          this.isMenuShow = false;
+        }
+      },
     },
   },
 });

@@ -1,6 +1,6 @@
 <template>
   <div class="hero-post relative">
-    <div class="w-full aspect-[1200/750] relative">
+    <div class="w-full aspect-[1200/750] relative overflow-hidden">
       <img
         :alt="data.url"
         :src="data.thumbnail"

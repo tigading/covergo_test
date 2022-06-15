@@ -4,10 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _1b15fe79 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
-const _86967408 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
-const _45b58942 = () => interopDefault(import('../pages/blog/_title.vue' /* webpackChunkName: "pages/blog/_title" */))
-const _1b6222ae = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _4f3b09f2 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
+const _a669d5ba = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
+const _6b356e70 = () => interopDefault(import('../pages/oops.vue' /* webpackChunkName: "pages/oops" */))
+const _d39c262e = () => interopDefault(import('../pages/blog/_title.vue' /* webpackChunkName: "pages/blog/_title" */))
+const _e97fe0d6 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -22,19 +23,23 @@ export const routerOptions = {
 
   routes: [{
     path: "/blog",
-    component: _1b15fe79,
+    component: _4f3b09f2,
     name: "blog___en"
   }, {
     path: "/contact",
-    component: _86967408,
+    component: _a669d5ba,
     name: "contact___en"
   }, {
+    path: "/oops",
+    component: _6b356e70,
+    name: "oops___en"
+  }, {
     path: "/blog/:title",
-    component: _45b58942,
+    component: _d39c262e,
     name: "blog-title___en"
   }, {
     path: "/",
-    component: _1b6222ae,
+    component: _e97fe0d6,
     name: "index___en"
   }],
 

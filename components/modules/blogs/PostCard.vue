@@ -3,7 +3,9 @@
     :class="{ 'flex-row-reverse': reverse }"
     class="post-card xl-down:flex-col flex gap-[30px] md:gap-[60px]"
   >
-    <div class="w-full aspect-[710/500] xl:max-w-[710px] relative">
+    <div
+      class="w-full aspect-[710/500] xl:max-w-[710px] overflow-hidden relative"
+    >
       <img
         :alt="data.url"
         :src="data.thumbnail"
@@ -12,7 +14,7 @@
       />
       <div
         v-if="data.type === TYPES.VIDEO"
-        class="h-[70px] w-[70px] md:h-[90px] md:w-[90px] pl-1.5 rounded-full bg-white-90 dark:bg-black-90 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+        class="h-[70px] w-[70px] md:h-[90px] md:w-[90px] pl-1.5 rounded-full bg-white-90 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
       >
         <span class="text-egg-blue">
           <InlineSvg
@@ -37,8 +39,7 @@
         {{ data.category }}
       </div>
       <div
-        :class="reverse ? 'xl:text-right' : 'xl:text-left'"
-        class="post-card__title cursor-pointer hover:text-egg-blue font-bold md:text-center text-title--md md:text-title mt-4 md:mt-6 max-h-[170px]"
+        class="post-card__title cursor-pointer hover:text-egg-blue font-bold text-title--md md:text-title mt-4 md:mt-6 max-h-[170px]"
       >
         {{ data.title }}
       </div>

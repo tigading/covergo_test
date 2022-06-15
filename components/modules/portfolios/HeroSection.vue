@@ -9,21 +9,28 @@
         <div class="capitalize md-down:text-center">
           Hello<span class="text-egg-blue">.</span>
         </div>
-        <div class="uppercase md-down:text-center">I'm DINH</div>
-        <div class="uppercase md-down:text-center">
+        <div class="uppercase md-down:text-center" data-aos-duration="1200">
+          I'm DINH
+        </div>
+        <div class="uppercase md-down:text-center" data-aos-duration="1400">
           HOANG TUAN<span class="text-egg-blue">.</span>
         </div>
       </div>
       <div
         class="mt-[50px] lg:mt-[80px] md-down:flex md-down:items-center md-down:justify-center"
       >
-        <button class="mx-auto da-btn text-xs">GET CONTACT</button>
+        <nuxt-link to="/contact">
+          <button class="mx-auto da-btn text-xs">GET IN TOUCH</button>
+        </nuxt-link>
       </div>
     </div>
-    <div class="w-[80%] md:w-1/2 aspect-[29/30] md:p-4 lg:p-10">
+    <div
+      class="w-[80%] md:w-1/2 aspect-[29/30] md:p-4 lg:p-10"
+      data-aos-duration="600"
+    >
       <img
-        alt="tiga-ding"
-        class="h-full w-full bg-cover"
+        alt="tiga-ding "
+        class="h-full w-full bg-cover not-hover"
         src="@/assets/images/backgrounds/tiga.svg"
       />
     </div>
@@ -32,8 +39,11 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import Responsive from '~/mixins/Responsive.vue';
 
 export default Vue.extend({
   name: 'HeroSection',
+
+  mixins: [Responsive],
 });
 </script>

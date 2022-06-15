@@ -30,13 +30,13 @@ module.exports = {
           },
         ],
         'title--lg': [
-          '30px',
+          '36px',
           {
             lineHeight: '150%',
           },
         ],
         title: [
-          '40px',
+          '42px',
           {
             lineHeight: '150%',
           },

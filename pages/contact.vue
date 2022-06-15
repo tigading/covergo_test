@@ -16,7 +16,7 @@
             class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
           >
             <div class="uppercase font-semibold">NAME</div>
-            <div class="opacity-50 dark:opacity-90 sm:text-right font-medium">
+            <div class="text-neutral-400 sm:text-right font-medium">
               Dinh Hoang Tuan
             </div>
           </div>
@@ -24,7 +24,7 @@
             class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-8 gap-4"
           >
             <div class="uppercase font-semibold">ADDRESS</div>
-            <div class="opacity-50 dark:opacity-90 sm:text-right font-medium">
+            <div class="text-neutral-400 sm:text-right font-medium">
               Can Tho, Viet Nam
             </div>
           </div>
@@ -32,7 +32,7 @@
             class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-8 gap-4"
           >
             <div class="uppercase font-semibold">EMAIL</div>
-            <div class="opacity-50 dark:opacity-90 sm:text-right font-medium">
+            <div class="text-neutral-400 sm:text-right font-medium">
               tuandh7x@gmail.com
             </div>
           </div>
@@ -43,28 +43,28 @@
             <div class="flex items-center sm:justify-end gap-[30px]">
               <a href="https://facebook.com/tigading7" target="_blank">
                 <div
-                  class="social__icon flex items-center justify-center opacity-50 dark:opacity-90 hover:opacity-100 dark:hover:opacity-100"
+                  class="social__icon flex items-center justify-center text-neutral-400 hover:text-cod-gray dark:hover:text-white"
                 >
                   <InlineSvg class="h-4" src="/icons/facebook-icon.svg" />
                 </div>
               </a>
               <a href="https://instagram.com/tigading7" target="_blank">
                 <div
-                  class="social__icon flex items-center justify-center opacity-50 dark:opacity-90 hover:opacity-100 dark:hover:opacity-100"
+                  class="social__icon flex items-center justify-center text-neutral-400 hover:text-cod-gray dark:hover:text-white"
                 >
                   <InlineSvg class="h-4" src="/icons/instagram-icon.svg" />
                 </div>
               </a>
               <a href="https://twitter.com/tigading7" target="_blank">
                 <div
-                  class="social__icon flex items-center justify-center opacity-50 dark:opacity-90 hover:opacity-100 dark:hover:opacity-100"
+                  class="social__icon flex items-center justify-center text-neutral-400 hover:text-cod-gray dark:hover:text-white"
                 >
                   <InlineSvg class="h-4" src="/icons/twitter-icon.svg" />
                 </div>
               </a>
               <a href="https://linkedin.com/in/dinh-hoang-tuan" target="_blank">
                 <div
-                  class="social__icon flex items-center justify-center opacity-50 dark:opacity-90 hover:opacity-100 dark:hover:opacity-100"
+                  class="social__icon flex items-center justify-center text-neutral-400 hover:text-cod-gray dark:hover:text-white"
                 >
                   <InlineSvg class="h-4" src="/icons/linkedin-icon.svg" />
                 </div>
