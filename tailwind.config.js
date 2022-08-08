@@ -14,54 +14,6 @@ module.exports = {
       width: {
         fit: 'fit-content',
       },
-      colors: {
-        'egg-blue': '#00C8CC',
-        'cod-gray': '#090909',
-        'white-90': 'rgba(255, 255, 255, 0.9)',
-        'white-94': 'rgba(255, 255, 255, 0.94)',
-        'black-90': 'rgba(0, 0, 0, 0.9)',
-        'black-94': 'rgba(0, 0, 0, 0.94)',
-      },
-      fontSize: {
-        'title--md': [
-          '20px',
-          {
-            lineHeight: '150%',
-          },
-        ],
-        'title--lg': [
-          '36px',
-          {
-            lineHeight: '150%',
-          },
-        ],
-        title: [
-          '42px',
-          {
-            lineHeight: '150%',
-          },
-        ],
-        brand: [
-          '30px',
-          {
-            letterSpacing: '0.14em',
-          },
-        ],
-        'brand-hero--md': [
-          '36px',
-          {
-            lineHeight: '150%',
-            letterSpacing: '0.14em',
-          },
-        ],
-        'brand-hero': [
-          '50px',
-          {
-            lineHeight: '150%',
-            letterSpacing: '0.14em',
-          },
-        ],
-      },
     },
     screens: {
       sm: '640px',
@@ -106,5 +58,5 @@ module.exports = {
       auto: 'auto',
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };

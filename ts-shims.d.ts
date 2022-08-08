@@ -4,4 +4,4 @@ declare module '*.vue' {
   export default Vue;
 }
 
-declare module 'aos';
+declare module '@heroicons/vue/solid';

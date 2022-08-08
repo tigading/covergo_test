@@ -78,13 +78,6 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-svg', href: '/favicon.svg' }],
-    script: [
-      {
-        body: true,
-        ssr: false,
-        src: '/js/main.js',
-      },
-    ],
   },
 
   loading: {
@@ -103,17 +96,7 @@ export default {
   css: ['~/assets/sass/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/vue-inline-svg',
-    {
-      src: '~/plugins/vue-flickity',
-      mode: 'client',
-    },
-    {
-      src: '~/plugins/locomotive-scroll',
-      mode: 'client',
-    },
-  ],
+  plugins: ['~/plugins/vue-inline-svg'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
@@ -125,8 +108,6 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    // https://www.npmjs.com/package/nuxt-gsap-module
-    'nuxt-gsap-module',
     '@nuxtjs/sitemap',
   ],
 
@@ -191,16 +172,6 @@ export default {
     config: {
       productionTip: false,
       devtools: process.env.NODE_ENV === 'development' || process.env.DEBUG,
-    },
-  },
-
-  gsap: {
-    extraPlugins: {
-      scrollTo: true,
-      scrollTrigger: true,
-    },
-    extraEases: {
-      expoScaleEase: true,
     },
   },
 

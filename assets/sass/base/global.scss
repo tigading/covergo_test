@@ -1,11 +1,11 @@
 // Link
 .nuxt-link-exact-active {
-  @apply text-egg-blue;
+  @apply text-sky-500;
 }
 
 .nuxt-link-active {
   &:not(.home-router) {
-    @apply text-egg-blue;
+    @apply text-sky-500;
   }
 }
 
@@ -15,75 +15,20 @@ input:-webkit-autofill {
 }
 
 // Button
-.da-btn {
-  @apply bg-cod-gray dark:bg-white text-white dark:text-cod-gray px-8 md:px-10 font-medium h-12 md:h-14 hover:opacity-80;
+.btn-custom {
+  @apply bg-black dark:bg-white text-white dark:text-black px-6 md:px-8 font-medium h-10 md:h-12 hover:opacity-80 capitalize rounded;
   line-height: 150%;
   letter-spacing: 0.1rem;
   transition: all 0.2s ease;
 }
 
-// Flickity
-.flickity-page-dots {
-  transform: translateY(80px);
-
-  .dot {
-    width: 30px !important;
-    height: 1.4px !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    @apply bg-black-90 dark:bg-white-90;
-
-    &:not(.is-selected) {
-      @apply opacity-10 dark:opacity-20;
-    }
-  }
-
-  &::before {
-    position: absolute;
-    content: 'Drag';
-    text-transform: uppercase;
-    transform: translateX(-50%);
-    left: calc(50% - 12px);
-    bottom: 20px;
-    font-weight: 600;
-    font-size: 0.7rem;
-    letter-spacing: 3px;
-    animation-name: right-left;
-    animation-direction: normal;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: backwards;
-  }
+.btn-outline-custom {
+  @apply dark:text-white text-black border dark:border-white border-black px-6 md:px-8 font-medium h-10 md:h-12 hover:opacity-80 capitalize rounded;
+  line-height: 150%;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease;
 }
 
-img:not(.not-hover) {
-  transition: all 0.6s ease;
-
-  &:hover {
-    transition: all 0.6s ease;
-    transform: scale(1.04);
-  }
-}
-
-@keyframes right-left {
-  0% {
-    transform: translateX(12px);
-  }
-
-  50% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(12px);
-  }
-}
-
-
-.right-left-animation {
-  animation-name: right-left;
-  animation-direction: normal;
-  animation-duration: 1.6s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: backwards;
+.input-custom {
+  @apply shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md h-10 md:h-12;
 }

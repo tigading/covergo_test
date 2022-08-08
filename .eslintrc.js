@@ -27,6 +27,7 @@ module.exports = {
     ],
     'import/extensions': 'off',
     'no-useless-catch': 'off',
+    'global-require': 'off',
     'no-param-reassign': [
       'error',
       {
